@@ -1,14 +1,14 @@
-Gestión de Restaurante – Authentication Service
+##Gestión de Restaurante – Authentication Service
 
 Este repositorio contiene el Servicio de Autenticación del sistema Gestión de Restaurante, desarrollado con ASP.NET Core y estructurado bajo una arquitectura por capas.
 
 El objetivo principal de este servicio es garantizar un sistema seguro, escalable y mantenible para la gestión de usuarios, autenticación y autorización dentro de la plataforma.
 
-🏗️ Arquitectura del Proyecto
+# Arquitectura del Proyecto
 
 La solución está organizada siguiendo una arquitectura limpia (Clean Architecture), separando responsabilidades en distintas capas:
 
-🔹 API
+# API
 
 Encargada de:
 
@@ -22,7 +22,7 @@ Configuración de la aplicación
 
 Manejo de autenticación y autorización
 
-🔹 Application
+## Application
 
 Contiene:
 
@@ -38,7 +38,7 @@ Validaciones
 
 Actúa como intermediario entre la capa API y el dominio.
 
-🔹 Domain
+## Domain
 
 Define:
 
@@ -50,32 +50,32 @@ Reglas fundamentales del sistema
 
 Esta capa es independiente de frameworks externos.
 
-🔹 Persistencia
+## Persistencia
 
 Responsable del acceso a datos utilizando Entity Framework Core.
 
 Incluye:
 
-DbContext
+- DbContext
 
-Implementación de repositorios
+- Implementación de repositorios
 
-Seeders de datos
+- Seeders de datos
 
-Migraciones de base de datos
+- Migraciones de base de datos
 
-Ubicación de migraciones:
+- Ubicación de migraciones:
 
-GestorRestaurante.Persistencia/Migrations
-🚀 Funcionalidades
+## GestorRestaurante.Persistencia/Migrations
+ Funcionalidades
 
-✅ Registro de usuarios
+- Registro de usuarios
 
-✅ Inicio de sesión
+- Inicio de sesión
 
-✅ Autenticación mediante JWT
+- Autenticación mediante JWT
 
-✅ Autorización basada en roles
+- Autorización basada en roles
 
 - Validación segura de credenciales
 
@@ -89,7 +89,7 @@ Sistema de migraciones integrado
 
 Configuración mediante appsettings.json
 
-⚙️ Ejecución del Proyecto
+## Ejecución del Proyecto
  Configurar la cadena de conexión
 
 Editar el archivo:
@@ -103,9 +103,9 @@ Y establecer la cadena de conexión correspondiente.
 Ejecutar en la terminal:
 
 dotnet ef database update
-3️⃣ Ejecutar el proyecto
-dotnet run
-🔐 Seguridad
+3️## Ejecutar el proyecto
+- dotnet run
+## Seguridad
 
 El sistema implementa:
 
@@ -115,6 +115,6 @@ Protección de endpoints mediante autorización por roles
 
 Manejo seguro de contraseñas
 
-📄 Licencia
+## Licencia
 
 Este proyecto está bajo la licencia MIT.
